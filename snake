@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameOver">
+        <h1>GAME OVER</h1>
+        <p id="finalScore">Score: 0</p>
+        <button onclick="location.reload()">PLAY AGAIN</button>
+    </div>
+
+    <div class="ui">
+        <div class="score">Score: <span id="scoreVal">0</span></div>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    
+    <div class="controls">
+        <div class="btn up" onclick="handleBtn('up')">▲</div>
+        <div class="btn left" onclick="handleBtn('left')">◀</div>
+        <div class="btn right" onclick="handleBtn('right')">▶</div>
+        <div class="btn down" onclick="handleBtn('down')">▼</div>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+</html>
